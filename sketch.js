@@ -23,9 +23,7 @@ function setup() {
    divisions[k].display();
    console.log("manasa");
  }*/
- for(k=0  ; k<=divisions.length ; k++){
-   divisions[k].display();
- }
+ 
  for (var j = 40; j <=width; j=j+50){
    plinkos.push(new Plinko(j,75));
  }
@@ -35,6 +33,9 @@ function draw() {
   background(0);  
   Engine.update(engine);
   ground.display();
+  for(k=0  ; k<=divisions.length ; k++){
+    divisions[k].display();
+  }
  /* div1.display();
   div2.display();
   div3.display();
