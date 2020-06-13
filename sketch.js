@@ -18,9 +18,13 @@ function setup() {
  div3 = new Division(200,635,10,200);
  div4 = new Division(300,635,10,200);
  div5  = new Division(400,635,10,200);*/
- for (var k = 0 ; k <=width ; k = k + 80){
+/* for (var k = 0 ; k <=width ; k = k + 80){
    divisions.push(new Division(k,height-divisionHeight/2,10,divisionHeight))
+   divisions[k].display();
    console.log("manasa");
+ }*/
+ for(k=0  ; k<=divisions.length ; k++){
+   divisions[k].display();
  }
  for (var j = 40; j <=width; j=j+50){
    plinkos.push(new Plinko(j,75));
@@ -36,4 +40,5 @@ function draw() {
   div3.display();
   div4.display();
   div5.display();*/
+  
 }
