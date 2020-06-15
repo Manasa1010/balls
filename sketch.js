@@ -12,17 +12,17 @@ function setup() {
  
   engine = Engine.create();
   world = engine.world;
-  ground = new Ground(width/2,750,480,30);
+  ground = new Ground(width/2,780,480,30);
  /* div1 = new Division(10,635,10,200);
   div2 = new Division(100,635,10,200);
  div3 = new Division(200,635,10,200);
  div4 = new Division(300,635,10,200);
  div5  = new Division(400,635,10,200);*/
-/* for (var k = 0 ; k <=width ; k = k + 80){
+ for (var k = 0 ; k <=width ; k = k + 80){
    divisions.push(new Division(k,height-divisionHeight/2,10,divisionHeight))
-   divisions[k].display();
+   
    console.log("manasa");
- }*/
+ }
  
  for (var j = 40; j <=width; j=j+50){
    plinkos.push(new Plinko(j,75));
@@ -35,6 +35,9 @@ function draw() {
   ground.display();
   for(k=0  ; k<=divisions.length ; k++){
     divisions[k].display();
+  }
+  for(j = 40; j<=plinkos.length; j++){
+    plinkos[j].display();
   }
  /* div1.display();
   div2.display();
