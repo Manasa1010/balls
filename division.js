@@ -11,14 +11,10 @@ class Division{
     }
     display(){
         var pos=this.body.position;
-        var angle=this.body.angle;
-        push();
-        translate(this.body.position.x, this.body.position.y);
-        rotate(angle);
-        fill("white");
-        rect(pos.x,pos.y,this.width,this.height)
-        pop();
-      
+        
+        rectMode(CENTER);
+       fill("white");
+       rect(pos.x,pos.y,this.width,this.height)
       
        
         
