@@ -10,10 +10,16 @@ class Division{
        World.add(world,this.body);
     }
     display(){
-       var  pos = this.body.position ;
-       rectMode(CENTER);
-       fill("white");
-       rect(pos.x,pos.y,this.width,this.height)
+        var pos=this.body.position;
+        var angle=this.body.angle;
+        push();
+        translate(this.body.position.x, this.body.position.y);
+        rotate(angle);
+        fill("white");
+        rect(pos.x,pos.y,this.width,this.height)
+        pop();
+      
+      
        
         
      
